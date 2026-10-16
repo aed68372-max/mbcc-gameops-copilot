@@ -1,0 +1,14 @@
+{
+  "requestId": "ecfb5a71-5b9f-42e6-a730-a13eb751fb3a",
+  "model": "qwen3:1.7b",
+  "profile": "guided",
+  "status": "INVALID_OUTPUT",
+  "elapsedMs": 3690.8178,
+  "reply": null,
+  "rawAnswer": "我是非官方MBCC研究助手，用于协助用户了解《无期迷途》的相关信息。如果有什么问题，欢迎随时问我！",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "JsonParseException",
+  "retrievalEvidence": [],
+  "toolStageAnswer": null
+}

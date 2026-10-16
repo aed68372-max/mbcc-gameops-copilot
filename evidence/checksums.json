@@ -1,0 +1,12 @@
+[
+  {
+    "Path": "C:\\Users\\a\\Documents\\Codex\\2026-10-16\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\mbcc-gameops-copilot\\target\\mbcc-gameops-copilot-0.1.0.jar",
+    "Algorithm": "SHA256",
+    "Hash": "ADF36E1FE874459E1742971173A452A35A480F4E6CBD61FC2F9263BAF6A8AEFF"
+  },
+  {
+    "Path": "C:\\Users\\a\\Documents\\Codex\\2026-10-16\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\mbcc-gameops-copilot\\src\\main\\resources\\knowledge.json",
+    "Algorithm": "SHA256",
+    "Hash": "1A341E7A1466757EA1008489894C91CBF867FEE1802F4F3857B11033674A0CE8"
+  }
+]

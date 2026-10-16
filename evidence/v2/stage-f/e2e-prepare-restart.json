@@ -1,0 +1,71 @@
+{
+  "kind": "REAL_HTTP_END_TO_END",
+  "phase": "prepare-restart",
+  "passed": 1,
+  "total": 1,
+  "cases": [
+    {
+      "case": "fresh_session_before_restart",
+      "passed": true,
+      "result": {
+        "requestId": "0cbc9260-52a8-4bb2-b2c3-f1d4e2be9f3a",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 13162.4858,
+        "reply": {
+          "answer": "赫卡蒂是《无期迷途》中的一个角色，根据公开资料，她收到海拉寄来的明信片，但这仅能确认通信关系，无法推断其他关系。",
+          "citations": [
+            "char-001"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\"answer\":\"赫卡蒂是《无期迷途》中的一个角色，根据公开资料，她收到海拉寄来的明信片，但这仅能确认通信关系，无法推断其他关系。\",\"citations\":[\"char-001\"],\"abstained\":false,\"clarification\":false}",
+        "tools": [
+          {
+            "callId": "0cbc9260-52a8-4bb2-b2c3-f1d4e2be9f3a:1",
+            "tool": "searchCharacterKnowledge",
+            "arguments": {
+              "character": "赫卡蒂",
+              "query": "背景",
+              "version": null
+            },
+            "status": "OK",
+            "elapsedMs": 143.2343,
+            "result": {
+              "status": "OK",
+              "sourceType": "OFFICIAL_KNOWLEDGE",
+              "data": [
+                {
+                  "score": 0.855835445807432,
+                  "chunk": "赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。",
+                  "source": {
+                    "source_id": "char-001",
+                    "title": "赫卡蒂生日与海拉明信片",
+                    "source_url": "https://wqmt.aisnogames.com/news/1196",
+                    "source_type": "official",
+                    "character_name": "赫卡蒂",
+                    "game_version": "CN公告2025-03-17",
+                    "collected_at": "2026-10-16",
+                    "content_type": "official_fact_summary",
+                    "verification_status": "verified_public_page",
+                    "category": "character",
+                    "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+                  }
+                }
+              ],
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "searchCharacterKnowledge:{\"character\":\"赫卡蒂\",\"query\":\"背景\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "赫卡蒂是《无期迷途》中的一个角色，根据已收录的公开资料，她于2025年3月17日迎来了生日会，官网发布相关内容，提到她收到了海拉寄来的明信片。这表明赫卡蒂与海拉之间可能存在某种通信或关系，但具体细节未被明确说明。"
+      }
+    }
+  ]
+}

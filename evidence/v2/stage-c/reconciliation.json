@@ -1,0 +1,1334 @@
+{
+  "status": "VERIFIED",
+  "case_count": 23,
+  "passed": 23,
+  "synthetic": true,
+  "cases": [
+    {
+      "case": 1,
+      "request": {
+        "metric": "DAU",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "DAU",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "DAU = distinct active users per calendar date, optional same-day event participant filter.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "activity_date": "2025-01-01",
+            "dau": 36
+          },
+          {
+            "activity_date": "2025-01-02",
+            "dau": 51
+          },
+          {
+            "activity_date": "2025-01-03",
+            "dau": 91
+          },
+          {
+            "activity_date": "2025-01-04",
+            "dau": 103
+          },
+          {
+            "activity_date": "2025-01-05",
+            "dau": 128
+          },
+          {
+            "activity_date": "2025-01-06",
+            "dau": 156
+          },
+          {
+            "activity_date": "2025-01-07",
+            "dau": 177
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "activity_date": "2025-01-01",
+          "dau": 36
+        },
+        {
+          "activity_date": "2025-01-02",
+          "dau": 51
+        },
+        {
+          "activity_date": "2025-01-03",
+          "dau": 91
+        },
+        {
+          "activity_date": "2025-01-04",
+          "dau": 103
+        },
+        {
+          "activity_date": "2025-01-05",
+          "dau": 128
+        },
+        {
+          "activity_date": "2025-01-06",
+          "dau": 156
+        },
+        {
+          "activity_date": "2025-01-07",
+          "dau": 177
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 2,
+      "request": {
+        "metric": "DAU",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "platform": "ios"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "DAU",
+        "window": {
+          "startDate": "2025-01-11",
+          "endDate": "2025-01-20",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": "ios"
+        },
+        "observation_end": "2025-02-14",
+        "definition": "DAU = distinct active users per calendar date, optional same-day event participant filter.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "activity_date": "2025-01-11",
+            "dau": 71
+          },
+          {
+            "activity_date": "2025-01-12",
+            "dau": 87
+          },
+          {
+            "activity_date": "2025-01-13",
+            "dau": 83
+          },
+          {
+            "activity_date": "2025-01-14",
+            "dau": 100
+          },
+          {
+            "activity_date": "2025-01-15",
+            "dau": 98
+          },
+          {
+            "activity_date": "2025-01-16",
+            "dau": 108
+          },
+          {
+            "activity_date": "2025-01-17",
+            "dau": 113
+          },
+          {
+            "activity_date": "2025-01-18",
+            "dau": 122
+          },
+          {
+            "activity_date": "2025-01-19",
+            "dau": 111
+          },
+          {
+            "activity_date": "2025-01-20",
+            "dau": 142
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "activity_date": "2025-01-11",
+          "dau": 71
+        },
+        {
+          "activity_date": "2025-01-12",
+          "dau": 87
+        },
+        {
+          "activity_date": "2025-01-13",
+          "dau": 83
+        },
+        {
+          "activity_date": "2025-01-14",
+          "dau": 100
+        },
+        {
+          "activity_date": "2025-01-15",
+          "dau": 98
+        },
+        {
+          "activity_date": "2025-01-16",
+          "dau": 108
+        },
+        {
+          "activity_date": "2025-01-17",
+          "dau": 113
+        },
+        {
+          "activity_date": "2025-01-18",
+          "dau": 122
+        },
+        {
+          "activity_date": "2025-01-19",
+          "dau": 111
+        },
+        {
+          "activity_date": "2025-01-20",
+          "dau": 142
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 3,
+      "request": {
+        "metric": "DAU",
+        "startDate": "2025-02-08",
+        "endDate": "2025-02-14",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "DAU",
+        "window": {
+          "startDate": "2025-02-08",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "DAU = distinct active users per calendar date, optional same-day event participant filter.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "activity_date": "2025-02-08",
+            "dau": 608
+          },
+          {
+            "activity_date": "2025-02-09",
+            "dau": 669
+          },
+          {
+            "activity_date": "2025-02-10",
+            "dau": 663
+          },
+          {
+            "activity_date": "2025-02-11",
+            "dau": 673
+          },
+          {
+            "activity_date": "2025-02-12",
+            "dau": 698
+          },
+          {
+            "activity_date": "2025-02-13",
+            "dau": 706
+          },
+          {
+            "activity_date": "2025-02-14",
+            "dau": 707
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "activity_date": "2025-02-08",
+          "dau": 608
+        },
+        {
+          "activity_date": "2025-02-09",
+          "dau": 669
+        },
+        {
+          "activity_date": "2025-02-10",
+          "dau": 663
+        },
+        {
+          "activity_date": "2025-02-11",
+          "dau": 673
+        },
+        {
+          "activity_date": "2025-02-12",
+          "dau": 698
+        },
+        {
+          "activity_date": "2025-02-13",
+          "dau": 706
+        },
+        {
+          "activity_date": "2025-02-14",
+          "dau": 707
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 4,
+      "request": {
+        "metric": "PAYMENT",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "PAYMENT",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct payers / period distinct active users; ARPU=revenue/active users; ARPPU=revenue/payers. Currency CNY, cents stored exactly. Zero denominator => null.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 241,
+            "payers": 44,
+            "revenue_cents": 481600,
+            "paying_rate": 0.182572614107,
+            "arpu_cny": 19.9834024896265,
+            "arppu_cny": 109.4545454545454
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 241,
+          "payers": 44,
+          "revenue_cents": 481600,
+          "paying_rate": 0.1825726141078838,
+          "arpu_cny": 19.983402489626556,
+          "arppu_cny": 109.45454545454545
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 5,
+      "request": {
+        "metric": "PAYMENT",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "platform": "ios"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "PAYMENT",
+        "window": {
+          "startDate": "2025-01-11",
+          "endDate": "2025-01-20",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": "ios"
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct payers / period distinct active users; ARPU=revenue/active users; ARPPU=revenue/payers. Currency CNY, cents stored exactly. Zero denominator => null.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 211,
+            "payers": 102,
+            "revenue_cents": 1153200,
+            "paying_rate": 0.483412322274,
+            "arpu_cny": 54.6540284360189,
+            "arppu_cny": 113.0588235294117
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 211,
+          "payers": 102,
+          "revenue_cents": 1153200,
+          "paying_rate": 0.4834123222748815,
+          "arpu_cny": 54.654028436018955,
+          "arppu_cny": 113.05882352941177
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 6,
+      "request": {
+        "metric": "PAYMENT",
+        "startDate": "2025-02-08",
+        "endDate": "2025-02-14",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "PAYMENT",
+        "window": {
+          "startDate": "2025-02-08",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct payers / period distinct active users; ARPU=revenue/active users; ARPPU=revenue/payers. Currency CNY, cents stored exactly. Zero denominator => null.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 1442,
+            "payers": 404,
+            "revenue_cents": 3715000,
+            "paying_rate": 0.280166435506,
+            "arpu_cny": 25.7628294036061,
+            "arppu_cny": 91.9554455445544
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 1442,
+          "payers": 404,
+          "revenue_cents": 3715000,
+          "paying_rate": 0.2801664355062413,
+          "arpu_cny": 25.7628294036061,
+          "arppu_cny": 91.95544554455445
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 7,
+      "request": {
+        "metric": "RETENTION_D1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D1",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D1 exact-day registration cohort retention; exclude cohorts whose D1 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 241,
+            "eligible_users": 241,
+            "censored_users": 0,
+            "retained_users": 178,
+            "retention_rate": 0.7385892116182573
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 241,
+          "eligible_users": 241,
+          "censored_users": 0,
+          "retained_users": 178,
+          "retention_rate": 0.7385892116182573
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 8,
+      "request": {
+        "metric": "RETENTION_D1",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "platform": "ios"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D1",
+        "window": {
+          "startDate": "2025-01-11",
+          "endDate": "2025-01-20",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": "ios"
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D1 exact-day registration cohort retention; exclude cohorts whose D1 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 107,
+            "eligible_users": 107,
+            "censored_users": 0,
+            "retained_users": 71,
+            "retention_rate": 0.6635514018691588
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 107,
+          "eligible_users": 107,
+          "censored_users": 0,
+          "retained_users": 71,
+          "retention_rate": 0.6635514018691588
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 9,
+      "request": {
+        "metric": "RETENTION_D1",
+        "startDate": "2025-02-08",
+        "endDate": "2025-02-14",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D1",
+        "window": {
+          "startDate": "2025-02-08",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D1 exact-day registration cohort retention; exclude cohorts whose D1 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 247,
+            "eligible_users": 202,
+            "censored_users": 45,
+            "retained_users": 141,
+            "retention_rate": 0.698019801980198
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 247,
+          "eligible_users": 202,
+          "censored_users": 45,
+          "retained_users": 141,
+          "retention_rate": 0.698019801980198
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 10,
+      "request": {
+        "metric": "RETENTION_D7",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D7",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D7 exact-day registration cohort retention; exclude cohorts whose D7 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 241,
+            "eligible_users": 241,
+            "censored_users": 0,
+            "retained_users": 163,
+            "retention_rate": 0.6763485477178424
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 241,
+          "eligible_users": 241,
+          "censored_users": 0,
+          "retained_users": 163,
+          "retention_rate": 0.6763485477178424
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 11,
+      "request": {
+        "metric": "RETENTION_D7",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "platform": "ios"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D7",
+        "window": {
+          "startDate": "2025-01-11",
+          "endDate": "2025-01-20",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": "ios"
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D7 exact-day registration cohort retention; exclude cohorts whose D7 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 107,
+            "eligible_users": 107,
+            "censored_users": 0,
+            "retained_users": 67,
+            "retention_rate": 0.6261682242990654
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 107,
+          "eligible_users": 107,
+          "censored_users": 0,
+          "retained_users": 67,
+          "retention_rate": 0.6261682242990654
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 12,
+      "request": {
+        "metric": "RETENTION_D7",
+        "startDate": "2025-02-08",
+        "endDate": "2025-02-14",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D7",
+        "window": {
+          "startDate": "2025-02-08",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D7 exact-day registration cohort retention; exclude cohorts whose D7 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 247,
+            "eligible_users": 0,
+            "censored_users": 247,
+            "retained_users": 0,
+            "retention_rate": null
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 247,
+          "eligible_users": 0,
+          "censored_users": 247,
+          "retained_users": 0,
+          "retention_rate": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 13,
+      "request": {
+        "metric": "EVENT_REVENUE",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_REVENUE",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "CNY cents of successful synthetic purchases assigned to an event, grouped by event_id.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [],
+        "parameterized": true
+      },
+      "python_reference": [],
+      "passed": true
+    },
+    {
+      "case": 14,
+      "request": {
+        "metric": "EVENT_REVENUE",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "platform": "ios"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_REVENUE",
+        "window": {
+          "startDate": "2025-01-11",
+          "endDate": "2025-01-20",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": "ios"
+        },
+        "observation_end": "2025-02-14",
+        "definition": "CNY cents of successful synthetic purchases assigned to an event, grouped by event_id.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "event_id": "SYN-LIMITED-01",
+            "payers": 102,
+            "revenue_cents": 1153200
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "event_id": "SYN-LIMITED-01",
+          "payers": 102,
+          "revenue_cents": 1153200
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 15,
+      "request": {
+        "metric": "EVENT_REVENUE",
+        "startDate": "2025-02-08",
+        "endDate": "2025-02-14",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_REVENUE",
+        "window": {
+          "startDate": "2025-02-08",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "CNY cents of successful synthetic purchases assigned to an event, grouped by event_id.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "event_id": "SYN-RERUN-02",
+            "payers": 219,
+            "revenue_cents": 1837000
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "event_id": "SYN-RERUN-02",
+          "payers": 219,
+          "revenue_cents": 1837000
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 16,
+      "request": {
+        "metric": "EVENT_PARTICIPATION",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_PARTICIPATION",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct event participants / period distinct active users, optional event and platform filters; descriptive association only.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 241,
+            "participants": 0,
+            "participation_rate": 0.0
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 241,
+          "participants": 0,
+          "participation_rate": 0.0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 17,
+      "request": {
+        "metric": "EVENT_PARTICIPATION",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "platform": "ios"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_PARTICIPATION",
+        "window": {
+          "startDate": "2025-01-11",
+          "endDate": "2025-01-20",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": "ios"
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct event participants / period distinct active users, optional event and platform filters; descriptive association only.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 211,
+            "participants": 191,
+            "participation_rate": 0.9052132701421801
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 211,
+          "participants": 191,
+          "participation_rate": 0.9052132701421801
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 18,
+      "request": {
+        "metric": "EVENT_PARTICIPATION",
+        "startDate": "2025-02-08",
+        "endDate": "2025-02-14",
+        "platform": null
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_PARTICIPATION",
+        "window": {
+          "startDate": "2025-02-08",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct event participants / period distinct active users, optional event and platform filters; descriptive association only.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 1442,
+            "participants": 724,
+            "participation_rate": 0.5020804438280166
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 1442,
+          "participants": 724,
+          "participation_rate": 0.5020804438280166
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 19,
+      "request": {
+        "metric": "DAU",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "eventId": "SYN-LIMITED-01"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "DAU",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": "SYN-LIMITED-01",
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "DAU = distinct active users per calendar date, optional same-day event participant filter.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "activity_date": "2025-01-01",
+            "dau": 0
+          },
+          {
+            "activity_date": "2025-01-02",
+            "dau": 0
+          },
+          {
+            "activity_date": "2025-01-03",
+            "dau": 0
+          },
+          {
+            "activity_date": "2025-01-04",
+            "dau": 0
+          },
+          {
+            "activity_date": "2025-01-05",
+            "dau": 0
+          },
+          {
+            "activity_date": "2025-01-06",
+            "dau": 0
+          },
+          {
+            "activity_date": "2025-01-07",
+            "dau": 0
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "activity_date": "2025-01-01",
+          "dau": 0
+        },
+        {
+          "activity_date": "2025-01-02",
+          "dau": 0
+        },
+        {
+          "activity_date": "2025-01-03",
+          "dau": 0
+        },
+        {
+          "activity_date": "2025-01-04",
+          "dau": 0
+        },
+        {
+          "activity_date": "2025-01-05",
+          "dau": 0
+        },
+        {
+          "activity_date": "2025-01-06",
+          "dau": 0
+        },
+        {
+          "activity_date": "2025-01-07",
+          "dau": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 20,
+      "request": {
+        "metric": "PAYMENT",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "eventId": "SYN-LIMITED-01"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "PAYMENT",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": "SYN-LIMITED-01",
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct payers / period distinct active users; ARPU=revenue/active users; ARPPU=revenue/payers. Currency CNY, cents stored exactly. Zero denominator => null.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 0,
+            "payers": 0,
+            "revenue_cents": 0,
+            "paying_rate": null,
+            "arpu_cny": null,
+            "arppu_cny": null
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 0,
+          "payers": 0,
+          "revenue_cents": 0,
+          "paying_rate": null,
+          "arpu_cny": null,
+          "arppu_cny": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 21,
+      "request": {
+        "metric": "EVENT_REVENUE",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "eventId": "SYN-LIMITED-01"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_REVENUE",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": "SYN-LIMITED-01",
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "CNY cents of successful synthetic purchases assigned to an event, grouped by event_id.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [],
+        "parameterized": true
+      },
+      "python_reference": [],
+      "passed": true
+    },
+    {
+      "case": 22,
+      "request": {
+        "metric": "EVENT_PARTICIPATION",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "eventId": "SYN-LIMITED-01"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "EVENT_PARTICIPATION",
+        "window": {
+          "startDate": "2025-01-01",
+          "endDate": "2025-01-07",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": "SYN-LIMITED-01",
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "Period distinct event participants / period distinct active users, optional event and platform filters; descriptive association only.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "active_users": 241,
+            "participants": 0,
+            "participation_rate": 0.0
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "active_users": 241,
+          "participants": 0,
+          "participation_rate": 0.0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": 23,
+      "request": {
+        "metric": "RETENTION_D7",
+        "startDate": "2025-02-14",
+        "endDate": "2025-02-14"
+      },
+      "sql": {
+        "status": "OK",
+        "synthetic": true,
+        "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+        "metric": "RETENTION_D7",
+        "window": {
+          "startDate": "2025-02-14",
+          "endDate": "2025-02-14",
+          "inclusive": true,
+          "timezone": "Asia/Shanghai"
+        },
+        "filters": {
+          "eventId": null,
+          "platform": null
+        },
+        "observation_end": "2025-02-14",
+        "definition": "D7 exact-day registration cohort retention; exclude cohorts whose D7 is after observation_end; not rolling retention. Cohort window is inclusive.",
+        "identity": {
+          "database_user": "mbcc_reader",
+          "database_name": "MBCCCopilotSynthetic"
+        },
+        "rows": [
+          {
+            "registered_users": 45,
+            "eligible_users": 0,
+            "censored_users": 45,
+            "retained_users": 0,
+            "retention_rate": null
+          }
+        ],
+        "parameterized": true
+      },
+      "python_reference": [
+        {
+          "registered_users": 45,
+          "eligible_users": 0,
+          "censored_users": 45,
+          "retained_users": 0,
+          "retention_rate": null
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "readonly_proof": {
+    "identity": [
+      "mbcc_reader",
+      1,
+      0
+    ],
+    "write_denied": true,
+    "revert_denied": true
+  },
+  "method": "Independent CSV set arithmetic versus parameterized SQL, with exact-day cohort censoring and zero-denominator controls."
+}

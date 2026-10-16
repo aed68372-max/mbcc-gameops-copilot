@@ -1,0 +1,19 @@
+{
+  "model": "qwen3:1.7b",
+  "status": "UP",
+  "metrics": {
+    "status": "CONFIGURED_NOT_A_LIVE_PROBE",
+    "query_user": "mbcc_reader",
+    "database": "MBCCCopilotSynthetic",
+    "synthetic": true,
+    "transport": "Windows ODBC via bounded local bridge"
+  },
+  "knowledge": {
+    "store": "IN_MEMORY",
+    "documents": 42,
+    "chunks": 42,
+    "dimension": 1024,
+    "collection": "mbcc_v2_3b7e1d2492ea",
+    "milvusVerified": false
+  }
+}

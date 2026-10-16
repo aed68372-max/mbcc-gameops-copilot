@@ -1,0 +1,138 @@
+{
+  "captured_at": "2026-10-16T14:51:35.6002114+08:00",
+  "health": {
+    "embedding": "REAL_OLLAMA",
+    "status": "UP",
+    "documents": 12,
+    "store": "IN_MEMORY",
+    "chunks": 16
+  },
+  "search_character": {
+    "http_status": 200,
+    "response": [
+      {
+        "score": 0.9280498635426562,
+        "chunk": "赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。",
+        "source": {
+          "source_id": "char-001",
+          "title": "赫卡蒂生日与海拉明信片",
+          "source_url": "https://wqmt.aisnogames.com/news/1196",
+          "source_type": "official",
+          "character_name": "赫卡蒂",
+          "game_version": "CN公告2025-03-17",
+          "collected_at": "2026-10-16",
+          "content_type": "official_fact_summary",
+          "verification_status": "verified_public_page",
+          "category": "character",
+          "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+        }
+      },
+      {
+        "score": 0.9226333389322176,
+        "chunk": "赫卡蒂生日与海拉明信片 只能据此确认通信，不能推断其他关系。",
+        "source": {
+          "source_id": "char-001",
+          "title": "赫卡蒂生日与海拉明信片",
+          "source_url": "https://wqmt.aisnogames.com/news/1196",
+          "source_type": "official",
+          "character_name": "赫卡蒂",
+          "game_version": "CN公告2025-03-17",
+          "collected_at": "2026-10-16",
+          "content_type": "official_fact_summary",
+          "verification_status": "verified_public_page",
+          "category": "character",
+          "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+        }
+      }
+    ]
+  },
+  "rag_character": {
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_RAG",
+      "answer": "资料日期为2025年3月17日，确认赫卡蒂生日与海拉明信片相关，但无法推断其他关系。",
+      "evidence": [
+        {
+          "score": 0.9280498635426562,
+          "chunk": "赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。",
+          "source": {
+            "source_id": "char-001",
+            "title": "赫卡蒂生日与海拉明信片",
+            "source_url": "https://wqmt.aisnogames.com/news/1196",
+            "source_type": "official",
+            "character_name": "赫卡蒂",
+            "game_version": "CN公告2025-03-17",
+            "collected_at": "2026-10-16",
+            "content_type": "official_fact_summary",
+            "verification_status": "verified_public_page",
+            "category": "character",
+            "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+          }
+        },
+        {
+          "score": 0.9226333389322176,
+          "chunk": "赫卡蒂生日与海拉明信片 只能据此确认通信，不能推断其他关系。",
+          "source": {
+            "source_id": "char-001",
+            "title": "赫卡蒂生日与海拉明信片",
+            "source_url": "https://wqmt.aisnogames.com/news/1196",
+            "source_type": "official",
+            "character_name": "赫卡蒂",
+            "game_version": "CN公告2025-03-17",
+            "collected_at": "2026-10-16",
+            "content_type": "official_fact_summary",
+            "verification_status": "verified_public_page",
+            "category": "character",
+            "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+          }
+        }
+      ]
+    }
+  },
+  "unknown_character": {
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_RETRIEVAL_NO_EVIDENCE",
+      "answer": "知识库未收录可支持该问题的证据。",
+      "evidence": []
+    }
+  },
+  "unknown_version": {
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_RETRIEVAL_NO_EVIDENCE",
+      "answer": "知识库未收录可支持该问题的证据。",
+      "evidence": []
+    }
+  },
+  "unrelated_question": {
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_RETRIEVAL_NO_EVIDENCE",
+      "answer": "知识库未收录可支持该问题的证据。",
+      "evidence": []
+    }
+  },
+  "agent_metrics": {
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answerStatus": "UNVERIFIED_MODEL_SUMMARY",
+      "answer": "模拟运营指标示例：  \n- 付费用户数：1000人  \n- 每人付费金额：50 CNY  \n- 平均收入：2500 CNY  \n- 模拟付费率：5%  \n\n如需进一步分析或调整，请告知。",
+      "executedTools": [
+        "getSyntheticOperationsMetrics: {}"
+      ],
+      "toolEvidence": [
+        {
+          "name": "getSyntheticOperationsMetrics",
+          "arguments": "{}",
+          "result": "Synthetic: activeUsers=1000, payingUsers=50, revenueCny=2500, payerRate=5%, ARPU=2.5 CNY；固定教学样例。",
+          "failed": false
+        }
+      ]
+    }
+  },
+  "blank_input": {
+    "http_status": 400
+  }
+}

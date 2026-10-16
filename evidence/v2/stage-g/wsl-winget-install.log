@@ -1,0 +1,6 @@
+已找到 适用于 Linux 的 Windows 子系统 [Microsoft.WSL] 版本 2.7.13
+此应用程序由其所有者授权给你。
+Microsoft 对第三方程序包概不负责，也不向第三方程序包授予任何许可证。
+已成功验证安装程序哈希
+正在启动程序包安装...
+安装程序失败，退出代码为: 0x80073d28 : The package installation failed because administrator privileges are required. Please contact an administrator to install this package.

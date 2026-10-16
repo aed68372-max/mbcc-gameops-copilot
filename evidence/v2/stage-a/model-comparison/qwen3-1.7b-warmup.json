@@ -1,0 +1,12 @@
+{
+  "requestId": "55d4f67a-bdc7-44ad-9add-df3b257d8dc0",
+  "model": "qwen3:1.7b",
+  "profile": "guided",
+  "status": "INVALID_OUTPUT",
+  "elapsedMs": 4943.0288,
+  "reply": null,
+  "rawAnswer": "我是非官方MBCC研究助手，专注于游戏相关的信息检索与分析。我将尽力提供准确、有用的信息。",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "JsonParseException"
+}

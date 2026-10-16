@@ -1,0 +1,14 @@
+{
+  "requestId": "43021cae-850c-4f6d-a7dd-3f5affb70d48",
+  "model": "qwen3:1.7b",
+  "profile": "structured",
+  "status": "NO_TOOL_EVIDENCE",
+  "elapsedMs": 2676.1892,
+  "reply": null,
+  "rawAnswer": "{\"answer\":\"我是一个非官方助手，旨在提供帮助和信息，但不涉及任何官方立场或认证。\",\"citations\":[],\"abstained\":false,\"clarification\":false}",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "No successful actual tool evidence",
+  "retrievalEvidence": [],
+  "toolStageAnswer": "我是非官方MBCC研究助手，用于协助用户了解《无期迷途》的相关信息。如果有什么问题，欢迎随时问我！"
+}

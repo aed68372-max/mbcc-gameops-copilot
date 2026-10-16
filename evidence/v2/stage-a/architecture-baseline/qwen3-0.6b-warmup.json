@@ -1,0 +1,19 @@
+{
+  "requestId": "194fb4ef-6aa5-41dd-9a49-0def2b25e438",
+  "model": "qwen3:0.6b",
+  "profile": "baseline",
+  "status": "INVALID_CITATION",
+  "elapsedMs": 1508.458,
+  "reply": {
+    "answer": "你好，我是非官方MBCC助手，旨在提供帮助。请告诉我您需要协助的具体内容或问题，以便更好地为您服务。",
+    "citations": [
+      ""
+    ],
+    "abstained": false,
+    "clarification": false
+  },
+  "rawAnswer": "{\"answer\":\"你好，我是非官方MBCC助手，旨在提供帮助。请告诉我您需要协助的具体内容或问题，以便更好地为您服务。\",\"citations\":[\"\"],\"abstained\":false,\"clarification\":false}",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "citation not retrieved in this request"
+}

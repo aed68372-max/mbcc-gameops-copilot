@@ -1,0 +1,20 @@
+{
+  "requestId": "e2a133ea-2e4b-4601-a354-377232707656",
+  "model": "qwen3:1.7b",
+  "profile": "structured",
+  "status": "NO_TOOL_EVIDENCE",
+  "elapsedMs": 6342.3495,
+  "reply": {
+    "answer": "加洛法诺是MBCC（Minecraft Battle Chest）游戏中的一个角色，属于MBCC官方角色列表。他是一个具有独特背景和技能的角色，通常出现在游戏的特定活动或剧情中。",
+    "citations": [
+      "1"
+    ],
+    "abstained": false,
+    "clarification": false
+  },
+  "rawAnswer": "{\"answer\":\"加洛法诺是MBCC（Minecraft Battle Chest）游戏中的一个角色，属于MBCC官方角色列表。他是一个具有独特背景和技能的角色，通常出现在游戏的特定活动或剧情中。\",\"citations\":[\"1\"],\"abstained\":false,\"clarification\":false}",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "No actual tool evidence",
+  "retrievalEvidence": []
+}

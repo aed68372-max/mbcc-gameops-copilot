@@ -1,0 +1,7 @@
+{
+  "host": "127.0.0.1",
+  "port": 19530,
+  "checked_at": "2026-10-16T14:54:15.7023234+08:00",
+  "deployment_validated": false,
+  "result": "TCP_TIMEOUT"
+}

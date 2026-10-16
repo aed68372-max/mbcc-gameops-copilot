@@ -1,0 +1,19 @@
+{
+  "requestId": "815dfa4a-e6a2-4b52-96bb-c02b658c29af",
+  "model": "qwen3:0.6b",
+  "profile": "guided",
+  "status": "INVALID_CITATION",
+  "elapsedMs": 2938.5627,
+  "reply": {
+    "answer": "你好，我是非官方MBCC研究助手。事实必须先查工具，不能使用参数记忆替代检索。",
+    "citations": [
+      ""
+    ],
+    "abstained": false,
+    "clarification": false
+  },
+  "rawAnswer": "{\"answer\":\"你好，我是非官方MBCC研究助手。事实必须先查工具，不能使用参数记忆替代检索。\",\"citations\":[\"\"],\"abstained\":false,\"clarification\":false}",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "citation not retrieved in this request"
+}

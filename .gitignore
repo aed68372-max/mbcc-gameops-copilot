@@ -1,0 +1,19 @@
+target/
+.idea/
+*.log
+!evidence/*.log
+!evidence/**/*.log
+.runtime/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+volumes/
+evidence/v2/runtime/
+# Live administrator-helper stream; publish the immutable snapshot instead.
+evidence/v2/stage-g/docker-admin-install.log
+evidence/v2/stage-g/admin-install-result.json
+
+# Full historical export remains local without separate authorization.
+evidence/v2/local-history.bundle

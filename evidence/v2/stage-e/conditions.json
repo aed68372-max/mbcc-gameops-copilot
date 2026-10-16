@@ -1,0 +1,31 @@
+{
+  "dataset_sha256": "9ca78e403c168680f6f6d209622c6fd533f5c4f73986de2c2e9424969a3899ae",
+  "tasks": 80,
+  "model": "qwen3:1.7b",
+  "temperature": 0,
+  "seed": 42,
+  "think": false,
+  "num_ctx": 8192,
+  "num_predict": 768,
+  "health": {
+    "knowledge": {
+      "store": "IN_MEMORY",
+      "documents": 42,
+      "chunks": 42,
+      "dimension": 1024,
+      "collection": "mbcc_v2_3b7e1d2492ea",
+      "milvusVerified": false
+    },
+    "model": "qwen3:1.7b",
+    "status": "UP",
+    "metrics": {
+      "database": "MBCCCopilotSynthetic",
+      "synthetic": true,
+      "transport": "Windows ODBC via bounded local bridge",
+      "status": "CONFIGURED_NOT_A_LIVE_PROBE",
+      "query_user": "mbcc_reader"
+    }
+  },
+  "method": "Serial requests. Dialogue seeds are actual model responses, not golden assistant text. Exact answer-term checks are conservative automated rubrics, not human semantic accuracy.",
+  "limits": "Single run per task; no statistical significance or causality claims. Model output shape/citation validation failures count as errors. SQL verification is independent CSV arithmetic; answer wording is not a full semantic judge."
+}

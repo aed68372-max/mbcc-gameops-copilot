@@ -1,0 +1,21 @@
+{
+  "requestId": "82afb9ad-268e-40c0-ab59-b14d0a0c0ce3",
+  "model": "qwen3:1.7b",
+  "profile": "structured",
+  "status": "NO_TOOL_EVIDENCE",
+  "elapsedMs": 6582.1326,
+  "reply": {
+    "answer": "加洛法诺是意大利的一家著名酒庄，属于意大利葡萄酒生产者协会（Azienda Agricola）成员。",
+    "citations": [
+      "https://www.aziendagalafano.it/"
+    ],
+    "abstained": false,
+    "clarification": false
+  },
+  "rawAnswer": "{\"answer\":\"加洛法诺是意大利的一家著名酒庄，属于意大利葡萄酒生产者协会（Azienda Agricola）成员。\",\"citations\":[\"https://www.aziendagalafano.it/\"],\"abstained\":false,\"clarification\":false}",
+  "tools": [],
+  "modelToolRequests": [],
+  "error": "No successful actual tool evidence",
+  "retrievalEvidence": [],
+  "toolStageAnswer": "{\"name\": \"searchCharacterKnowledge\", \"arguments\": {\"character\": \"加洛法诺\", \"query\": \"所属组织\"}}"
+}

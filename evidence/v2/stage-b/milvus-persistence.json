@@ -1,0 +1,5 @@
+{
+  "reason": "Docker engine/command unavailable; Windows prerequisite installation remains incomplete until reboot and service verification; no Milvus write/restart proof",
+  "status": "BLOCKED",
+  "checked_at": "2026-10-16T20:53:48.3218787+08:00"
+}

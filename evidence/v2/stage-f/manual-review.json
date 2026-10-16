@@ -1,0 +1,12 @@
+{
+  "status": "PARTIAL",
+  "evidence": "e2e-initial.json",
+  "automatic_checks": {"passed": 7, "total": 8},
+  "manual_review_upper_bound": {"passed": 6, "total": 8},
+  "limits": "Manual review identifies additional failures; this is not a complete independent semantic annotation or new model accuracy estimate.",
+  "findings": [
+    {"case": "turn2_pronoun", "semantic_pass": false, "reason": "Correct character reference and actual retrieval, but unsupported personality/background assertions. The original automated assertion was too permissive; its pass must not be represented as factual correctness."},
+    {"case": "limited_rules_plus_sql_before_after", "semantic_pass": false, "reason": "Four actual SQL calls succeeded, but no official limited-banner rules retrieved. Final answer lacked numeric comparison and limitations. Autonomous combined analysis remains incomplete."},
+    {"case": "e2e-restart-expired-session", "reason": "Initial session was older than the 30-minute idle TTL after a long interruption; access was correctly denied. Preserve this result separately from fresh-session restart verification."}
+  ]
+}

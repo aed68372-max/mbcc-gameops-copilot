@@ -1,0 +1,799 @@
+{
+  "status": "VERIFIED_MEASUREMENTS",
+  "limits": "Post-run fix plus 3 supplemental documents. Not a replacement or controlled improvement claim for the frozen 80-task experiment.",
+  "health": {
+    "metrics": {
+      "synthetic": true,
+      "database": "MBCCCopilotSynthetic",
+      "query_user": "mbcc_reader",
+      "status": "CONFIGURED_NOT_A_LIVE_PROBE",
+      "transport": "Windows ODBC via bounded local bridge"
+    },
+    "status": "UP",
+    "model": "qwen3:1.7b",
+    "knowledge": {
+      "store": "IN_MEMORY",
+      "documents": 45,
+      "chunks": 45,
+      "dimension": 1024,
+      "collection": "mbcc_v2_0ef68b401fcc",
+      "milvusVerified": false
+    }
+  },
+  "passed": 3,
+  "total": 8,
+  "cases": [
+    {
+      "task": {
+        "id": "E049",
+        "kind": "metrics",
+        "question": "列出2025-01-01至2025-01-07的Synthetic每日DAU。",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "DAU",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07"
+      },
+      "run": {
+        "requestId": "0e198eff-e6cd-4bc7-a491-2aa1e20a4d14",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 13363.1156,
+        "reply": {
+          "answer": "2025年1月1日至2025年1月7日的Synthetic每日DAU数据如下：",
+          "citations": [
+            "0e198eff-e6cd-4bc7-a491-2aa1e20a4d14:1"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\n  \"answer\": \"2025年1月1日至2025年1月7日的Synthetic每日DAU数据如下：\",\n  \"citations\": [\n    \"0e198eff-e6cd-4bc7-a491-2aa1e20a4d14:1\"\n  ],\n  \"abstained\": false,\n  \"clarification\": false\n}",
+        "tools": [
+          {
+            "callId": "0e198eff-e6cd-4bc7-a491-2aa1e20a4d14:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "DAU",
+              "startDate": "2025-01-01",
+              "endDate": "2025-01-07",
+              "eventId": null,
+              "platform": null
+            },
+            "status": "OK",
+            "elapsedMs": 258.7568,
+            "result": {
+              "status": "OK",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "OK",
+                "synthetic": true,
+                "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+                "metric": "DAU",
+                "window": {
+                  "startDate": "2025-01-01",
+                  "endDate": "2025-01-07",
+                  "inclusive": true,
+                  "timezone": "Asia/Shanghai"
+                },
+                "filters": {
+                  "eventId": null,
+                  "platform": null
+                },
+                "observation_end": "2025-02-14",
+                "definition": "DAU = distinct active users per calendar date, optional same-day event participant filter.",
+                "identity": {
+                  "database_user": "mbcc_reader",
+                  "database_name": "MBCCCopilotSynthetic"
+                },
+                "rows": [
+                  {
+                    "activity_date": "2025-01-01",
+                    "dau": 36
+                  },
+                  {
+                    "activity_date": "2025-01-02",
+                    "dau": 51
+                  },
+                  {
+                    "activity_date": "2025-01-03",
+                    "dau": 91
+                  },
+                  {
+                    "activity_date": "2025-01-04",
+                    "dau": 103
+                  },
+                  {
+                    "activity_date": "2025-01-05",
+                    "dau": 128
+                  },
+                  {
+                    "activity_date": "2025-01-06",
+                    "dau": 156
+                  },
+                  {
+                    "activity_date": "2025-01-07",
+                    "dau": 177
+                  }
+                ],
+                "parameterized": true,
+                "source_id": "0e198eff-e6cd-4bc7-a491-2aa1e20a4d14:1",
+                "source_type": "SYNTHETIC_SQL"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"metric\":\"DAU\",\"startDate\":\"2025-01-01\",\"endDate\":\"2025-01-07\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "2025年1月1日至7日的Synthetic每日DAU数据如下：\n\n- 2025-01-01: 36\n- 2025-01-02: 51\n- 2025-01-03: 91\n- 2025-01-04: 103\n- 2025-01-05: 128\n- 2025-01-06: 156\n- 2025-01-07: 177\n\n数据来源于MBCCCopilotSynthetic数据库，为合成数据，不反映真实运营情况。"
+      },
+      "original_rubric": {
+        "task_completed": true,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": true,
+        "metric_query_matches_csv": true,
+        "citation_valid": 0,
+        "citation_total": 1,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": true,
+      "passed": true
+    },
+    {
+      "task": {
+        "id": "E050",
+        "kind": "metrics",
+        "question": "查询2025-01-11到2025-01-20模拟付费率、ARPU和ARPPU。",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "PAYMENT",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20"
+      },
+      "run": {
+        "requestId": "cc9e2710-e4ed-4617-aa5e-8d314702f4b4",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 6594.3559,
+        "reply": {
+          "answer": "根据工具返回结果，当前无法查询2025-01-11到2025-01-20的模拟付费率、ARPU和ARPPU数据。工具返回错误信息为'platform not allowed'，表明该查询功能目前不可用或未被允许。",
+          "citations": [],
+          "abstained": true,
+          "clarification": true
+        },
+        "rawAnswer": "{\"answer\":\"根据工具返回结果，当前无法查询2025-01-11到2025-01-20的模拟付费率、ARPU和ARPPU数据。工具返回错误信息为'platform not allowed'，表明该查询功能目前不可用或未被允许。\",\"citations\":[],\"abstained\":true,\"clarification\":true}",
+        "tools": [
+          {
+            "callId": "cc9e2710-e4ed-4617-aa5e-8d314702f4b4:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "PAYMENT",
+              "startDate": "2025-01-11",
+              "endDate": "2025-01-20",
+              "eventId": null,
+              "platform": "PC"
+            },
+            "status": "INVALID_ARGUMENT",
+            "elapsedMs": 137.1037,
+            "result": {
+              "status": "INVALID_ARGUMENT",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "INVALID_ARGUMENT",
+                "synthetic": true,
+                "error": "platform not allowed"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"endDate\":\"2025-01-20\",\"platform\":\"PC\",\"metric\":\"PAYMENT\",\"startDate\":\"2025-01-11\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "模拟付费率、ARPU和ARPPU的查询需要指定平台，但当前查询中未指定平台，因此无法执行。请提供平台信息以便继续查询。"
+      },
+      "original_rubric": {
+        "task_completed": false,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": false,
+        "metric_query_matches_csv": false,
+        "citation_valid": 0,
+        "citation_total": 0,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": false,
+      "passed": false
+    },
+    {
+      "task": {
+        "id": "E051",
+        "kind": "metrics",
+        "question": "计算2025-01-01至2025-01-07新增用户的Synthetic D1留存。",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "RETENTION_D1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07"
+      },
+      "run": {
+        "requestId": "80bde676-8766-4cae-961a-7b372780d410",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 10273.6091,
+        "reply": {
+          "answer": "2025-01-01至2025-01-07期间新增用户的Synthetic D1留存为178人，留存率约为73.86%。",
+          "citations": [
+            "80bde676-8766-4cae-961a-7b372780d410:1"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\"answer\":\"2025-01-01至2025-01-07期间新增用户的Synthetic D1留存为178人，留存率约为73.86%。\",\"citations\":[\"80bde676-8766-4cae-961a-7b372780d410:1\"],\"abstained\":false,\"clarification\":false}",
+        "tools": [
+          {
+            "callId": "80bde676-8766-4cae-961a-7b372780d410:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "RETENTION_D1",
+              "startDate": "2025-01-01",
+              "endDate": "2025-01-07",
+              "eventId": null,
+              "platform": null
+            },
+            "status": "OK",
+            "elapsedMs": 304.1606,
+            "result": {
+              "status": "OK",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "OK",
+                "synthetic": true,
+                "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+                "metric": "RETENTION_D1",
+                "window": {
+                  "startDate": "2025-01-01",
+                  "endDate": "2025-01-07",
+                  "inclusive": true,
+                  "timezone": "Asia/Shanghai"
+                },
+                "filters": {
+                  "eventId": null,
+                  "platform": null
+                },
+                "observation_end": "2025-02-14",
+                "definition": "D1 exact-day registration cohort retention; exclude cohorts whose D1 is after observation_end; not rolling retention. Cohort window is inclusive.",
+                "identity": {
+                  "database_user": "mbcc_reader",
+                  "database_name": "MBCCCopilotSynthetic"
+                },
+                "rows": [
+                  {
+                    "registered_users": 241,
+                    "eligible_users": 241,
+                    "censored_users": 0,
+                    "retained_users": 178,
+                    "retention_rate": 0.7385892116182573
+                  }
+                ],
+                "parameterized": true,
+                "source_id": "80bde676-8766-4cae-961a-7b372780d410:1",
+                "source_type": "SYNTHETIC_SQL"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"metric\":\"RETENTION_D1\",\"startDate\":\"2025-01-01\",\"endDate\":\"2025-01-07\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "根据查询结果，2025年1月1日至2025年1月7日新增用户的D1留存率为 **73.86%**，具体数据如下：\n\n- 新增用户总数：241人  \n- 有效用户数：241人  \n- 保留用户数：178人  \n- 保留率：73.86%  \n\n数据来源为合成数据，未包含真实运营信息。"
+      },
+      "original_rubric": {
+        "task_completed": true,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": true,
+        "metric_query_matches_csv": true,
+        "citation_valid": 0,
+        "citation_total": 1,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": true,
+      "passed": true
+    },
+    {
+      "task": {
+        "id": "E052",
+        "kind": "metrics",
+        "question": "计算2025-01-01至2025-01-07新增用户的模拟D7留存。",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "RETENTION_D7",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07"
+      },
+      "run": {
+        "requestId": "49e4496e-ec07-4026-8fca-a0cf8d83dc0a",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 8577.2908,
+        "reply": {
+          "answer": "2025-01-01至2025-01-07期间新增用户的D7留存率为67.63%，新增用户数为241人，其中留存用户数为163人。",
+          "citations": [
+            "49e4496e-ec07-4026-8fca-a0cf8d83dc0a:1"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\"answer\":\"2025-01-01至2025-01-07期间新增用户的D7留存率为67.63%，新增用户数为241人，其中留存用户数为163人。\",\"citations\":[\"49e4496e-ec07-4026-8fca-a0cf8d83dc0a:1\"],\"abstained\":false,\"clarification\":false}",
+        "tools": [
+          {
+            "callId": "49e4496e-ec07-4026-8fca-a0cf8d83dc0a:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "RETENTION_D7",
+              "startDate": "2025-01-01",
+              "endDate": "2025-01-07",
+              "eventId": null,
+              "platform": null
+            },
+            "status": "OK",
+            "elapsedMs": 188.2956,
+            "result": {
+              "status": "OK",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "OK",
+                "synthetic": true,
+                "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+                "metric": "RETENTION_D7",
+                "window": {
+                  "startDate": "2025-01-01",
+                  "endDate": "2025-01-07",
+                  "inclusive": true,
+                  "timezone": "Asia/Shanghai"
+                },
+                "filters": {
+                  "eventId": null,
+                  "platform": null
+                },
+                "observation_end": "2025-02-14",
+                "definition": "D7 exact-day registration cohort retention; exclude cohorts whose D7 is after observation_end; not rolling retention. Cohort window is inclusive.",
+                "identity": {
+                  "database_user": "mbcc_reader",
+                  "database_name": "MBCCCopilotSynthetic"
+                },
+                "rows": [
+                  {
+                    "registered_users": 241,
+                    "eligible_users": 241,
+                    "censored_users": 0,
+                    "retained_users": 163,
+                    "retention_rate": 0.6763485477178424
+                  }
+                ],
+                "parameterized": true,
+                "source_id": "49e4496e-ec07-4026-8fca-a0cf8d83dc0a:1",
+                "source_type": "SYNTHETIC_SQL"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"metric\":\"RETENTION_D7\",\"startDate\":\"2025-01-01\",\"endDate\":\"2025-01-07\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "根据模拟数据，2025年1月1日至1月7日新增用户的D7留存率为 **67.63%**。"
+      },
+      "original_rubric": {
+        "task_completed": false,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": true,
+        "metric_query_matches_csv": true,
+        "citation_valid": 0,
+        "citation_total": 1,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": true,
+      "passed": false
+    },
+    {
+      "task": {
+        "id": "E053",
+        "kind": "metrics",
+        "question": "SYN-LIMITED-01在2025-01-11至2025-01-20的模拟卡池流水是多少？",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "EVENT_REVENUE",
+        "startDate": "2025-01-11",
+        "endDate": "2025-01-20",
+        "eventId": "SYN-LIMITED-01"
+      },
+      "run": {
+        "requestId": "d83504f3-f856-47e9-a484-4b872703051e",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 9392.2387,
+        "reply": {
+          "answer": "SYN-LIMITED-01在2025-01-11至2025-01-20的模拟卡池流水为654名活跃用户，参与人数为598人，参与率约为91.44%。",
+          "citations": [
+            "d83504f3-f856-47e9-a484-4b872703051e:1"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\"answer\":\"SYN-LIMITED-01在2025-01-11至2025-01-20的模拟卡池流水为654名活跃用户，参与人数为598人，参与率约为91.44%。\",\"citations\":[\"d83504f3-f856-47e9-a484-4b872703051e:1\"],\"abstained\":false,\"clarification\":false}",
+        "tools": [
+          {
+            "callId": "d83504f3-f856-47e9-a484-4b872703051e:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "EVENT_PARTICIPATION",
+              "startDate": "2025-01-11",
+              "endDate": "2025-01-20",
+              "eventId": null,
+              "platform": null
+            },
+            "status": "OK",
+            "elapsedMs": 201.582,
+            "result": {
+              "status": "OK",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "OK",
+                "synthetic": true,
+                "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+                "metric": "EVENT_PARTICIPATION",
+                "window": {
+                  "startDate": "2025-01-11",
+                  "endDate": "2025-01-20",
+                  "inclusive": true,
+                  "timezone": "Asia/Shanghai"
+                },
+                "filters": {
+                  "eventId": null,
+                  "platform": null
+                },
+                "observation_end": "2025-02-14",
+                "definition": "Period distinct event participants / period distinct active users, optional event and platform filters; descriptive association only.",
+                "identity": {
+                  "database_user": "mbcc_reader",
+                  "database_name": "MBCCCopilotSynthetic"
+                },
+                "rows": [
+                  {
+                    "active_users": 654,
+                    "participants": 598,
+                    "participation_rate": 0.9143730886850153
+                  }
+                ],
+                "parameterized": true,
+                "source_id": "d83504f3-f856-47e9-a484-4b872703051e:1",
+                "source_type": "SYNTHETIC_SQL"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"metric\":\"EVENT_PARTICIPATION\",\"startDate\":\"2025-01-11\",\"endDate\":\"2025-01-20\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "SYN-LIMITED-01在2025年1月11日至2025年1月20日的模拟卡池流水为**598**。"
+      },
+      "original_rubric": {
+        "task_completed": false,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": true,
+        "metric_query_matches_csv": false,
+        "citation_valid": 0,
+        "citation_total": 1,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": true,
+      "passed": false
+    },
+    {
+      "task": {
+        "id": "E054",
+        "kind": "metrics",
+        "question": "SYN-RERUN-02在2025-02-01至2025-02-10的Synthetic参与率是多少？",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "EVENT_PARTICIPATION",
+        "startDate": "2025-02-01",
+        "endDate": "2025-02-10",
+        "eventId": "SYN-RERUN-02"
+      },
+      "run": {
+        "requestId": "dd894a87-34cb-4eb2-ab34-ad80d389ec02",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 8251.8705,
+        "reply": {
+          "answer": "SYN-RERUN-02在2025-02-01至2025-02-10的Synthetic参与率是90.61%。",
+          "citations": [
+            "dd894a87-34cb-4eb2-ab34-ad80d389ec02:1"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\"answer\":\"SYN-RERUN-02在2025-02-01至2025-02-10的Synthetic参与率是90.61%。\",\"citations\":[\"dd894a87-34cb-4eb2-ab34-ad80d389ec02:1\"],\"abstained\":false,\"clarification\":false}",
+        "tools": [
+          {
+            "callId": "dd894a87-34cb-4eb2-ab34-ad80d389ec02:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "EVENT_PARTICIPATION",
+              "startDate": "2025-02-01",
+              "endDate": "2025-02-10",
+              "eventId": null,
+              "platform": null
+            },
+            "status": "OK",
+            "elapsedMs": 174.4647,
+            "result": {
+              "status": "OK",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "OK",
+                "synthetic": true,
+                "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+                "metric": "EVENT_PARTICIPATION",
+                "window": {
+                  "startDate": "2025-02-01",
+                  "endDate": "2025-02-10",
+                  "inclusive": true,
+                  "timezone": "Asia/Shanghai"
+                },
+                "filters": {
+                  "eventId": null,
+                  "platform": null
+                },
+                "observation_end": "2025-02-14",
+                "definition": "Period distinct event participants / period distinct active users, optional event and platform filters; descriptive association only.",
+                "identity": {
+                  "database_user": "mbcc_reader",
+                  "database_name": "MBCCCopilotSynthetic"
+                },
+                "rows": [
+                  {
+                    "active_users": 1352,
+                    "participants": 1225,
+                    "participation_rate": 0.9060650887573964
+                  }
+                ],
+                "parameterized": true,
+                "source_id": "dd894a87-34cb-4eb2-ab34-ad80d389ec02:1",
+                "source_type": "SYNTHETIC_SQL"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"metric\":\"EVENT_PARTICIPATION\",\"startDate\":\"2025-02-01\",\"endDate\":\"2025-02-10\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "SYN-RERUN-02在2025年2月1日至2025年2月10日的Synthetic参与率为90.61%。"
+      },
+      "original_rubric": {
+        "task_completed": false,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": true,
+        "metric_query_matches_csv": false,
+        "citation_valid": 0,
+        "citation_total": 1,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": true,
+      "passed": false
+    },
+    {
+      "task": {
+        "id": "E055",
+        "kind": "metrics",
+        "question": "2025-02-14新增用户的D7留存能完整观察吗？请查询Synthetic数据。",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "RETENTION_D7",
+        "startDate": "2025-02-14",
+        "endDate": "2025-02-14"
+      },
+      "run": {
+        "requestId": "3ce292d0-58cd-4554-821f-8814673ba367",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 8241.746,
+        "reply": {
+          "answer": "D7留存数据在2025-02-14时，仅包含当天的注册用户，未包含后续日期的数据。根据Synthetic数据，当天的留存率为0%。",
+          "citations": [
+            "3ce292d0-58cd-4554-821f-8814673ba367:1"
+          ],
+          "abstained": false,
+          "clarification": false
+        },
+        "rawAnswer": "{\"answer\":\"D7留存数据在2025-02-14时，仅包含当天的注册用户，未包含后续日期的数据。根据Synthetic数据，当天的留存率为0%。\",\"citations\":[\"3ce292d0-58cd-4554-821f-8814673ba367:1\"],\"abstained\":false,\"clarification\":false}",
+        "tools": [
+          {
+            "callId": "3ce292d0-58cd-4554-821f-8814673ba367:1",
+            "tool": "queryGameMetrics",
+            "arguments": {
+              "metric": "RETENTION_D7",
+              "startDate": "2025-02-14",
+              "endDate": "2025-02-14",
+              "eventId": null,
+              "platform": null
+            },
+            "status": "OK",
+            "elapsedMs": 184.8093,
+            "result": {
+              "status": "OK",
+              "sourceType": "SYNTHETIC_SQL",
+              "data": {
+                "status": "OK",
+                "synthetic": true,
+                "source": "MBCCCopilotSynthetic / data/synthetic/manifest.json",
+                "metric": "RETENTION_D7",
+                "window": {
+                  "startDate": "2025-02-14",
+                  "endDate": "2025-02-14",
+                  "inclusive": true,
+                  "timezone": "Asia/Shanghai"
+                },
+                "filters": {
+                  "eventId": null,
+                  "platform": null
+                },
+                "observation_end": "2025-02-14",
+                "definition": "D7 exact-day registration cohort retention; exclude cohorts whose D7 is after observation_end; not rolling retention. Cohort window is inclusive.",
+                "identity": {
+                  "database_user": "mbcc_reader",
+                  "database_name": "MBCCCopilotSynthetic"
+                },
+                "rows": [
+                  {
+                    "registered_users": 45,
+                    "eligible_users": 0,
+                    "censored_users": 45,
+                    "retained_users": 0,
+                    "retention_rate": null
+                  }
+                ],
+                "parameterized": true,
+                "source_id": "3ce292d0-58cd-4554-821f-8814673ba367:1",
+                "source_type": "SYNTHETIC_SQL"
+              },
+              "error": null
+            }
+          }
+        ],
+        "modelToolRequests": [
+          "queryGameMetrics:{\"metric\":\"RETENTION_D7\",\"startDate\":\"2025-02-14\",\"endDate\":\"2025-02-14\"}"
+        ],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "根据Synthetic数据查询结果，2025年2月14日新增用户的D7留存率为0%。该数据反映了在观察期内，没有用户满足留存条件。"
+      },
+      "original_rubric": {
+        "task_completed": true,
+        "tool_selection_correct": true,
+        "parameter_schema_pass": true,
+        "metric_query_matches_csv": true,
+        "citation_valid": 0,
+        "citation_total": 1,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": true,
+      "passed": true
+    },
+    {
+      "task": {
+        "id": "E056",
+        "kind": "metrics",
+        "question": "SYN-LIMITED-01在2025-01-01到2025-01-07尚无活动时付费率分母为零应如何呈现？",
+        "expectedSources": [],
+        "answerContains": [],
+        "expectedTools": [
+          "queryGameMetrics"
+        ],
+        "metric": "PAYMENT",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-07",
+        "eventId": "SYN-LIMITED-01"
+      },
+      "run": {
+        "requestId": "4343b51c-8ec2-4c24-81fa-dc2e9cb447fd",
+        "model": "qwen3:1.7b",
+        "profile": "tools",
+        "status": "OK",
+        "elapsedMs": 4796.5825,
+        "reply": {
+          "answer": "SYN-LIMITED-01在2025-01-01到2025-01-07期间若无活动，则付费率分母为零的情况在数据呈现上应避免显示为零，通常会以'N/A'或'未定义'的方式处理，以保持数据的清晰性和合理性。",
+          "citations": [],
+          "abstained": true,
+          "clarification": true
+        },
+        "rawAnswer": "{\"answer\":\"SYN-LIMITED-01在2025-01-01到2025-01-07期间若无活动，则付费率分母为零的情况在数据呈现上应避免显示为零，通常会以'N/A'或'未定义'的方式处理，以保持数据的清晰性和合理性。\",\"citations\":[],\"abstained\":true,\"clarification\":true}",
+        "tools": [],
+        "modelToolRequests": [],
+        "error": null,
+        "retrievalEvidence": [],
+        "toolStageAnswer": "{\"name\": \"queryGameMetrics\", \"arguments\": {\"metric\": \"PAYMENT\", \"startDate\": \"2025-01-01\", \"endDate\": \"2025-01-07\"}}"
+      },
+      "original_rubric": {
+        "task_completed": false,
+        "tool_selection_correct": false,
+        "parameter_schema_pass": false,
+        "metric_query_matches_csv": false,
+        "citation_valid": 0,
+        "citation_total": 0,
+        "abstention_correct": null,
+        "retrieved_source_ids": [],
+        "source_coverage": null,
+        "answer_term_check": true
+      },
+      "sql_citation_valid": false,
+      "passed": false
+    }
+  ]
+}

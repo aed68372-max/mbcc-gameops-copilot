@@ -1,0 +1,129 @@
+{
+  "captured_at": "2026-10-16T14:49:09.0269957+08:00",
+  "health": {
+    "chunks": 16,
+    "embedding": "REAL_OLLAMA",
+    "status": "UP",
+    "documents": 12,
+    "store": "IN_MEMORY"
+  },
+  "search_character": {
+    "response": [
+      {
+        "score": 0.9280498635426562,
+        "chunk": "赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。",
+        "source": {
+          "source_id": "char-001",
+          "title": "赫卡蒂生日与海拉明信片",
+          "source_url": "https://wqmt.aisnogames.com/news/1196",
+          "source_type": "official",
+          "character_name": "赫卡蒂",
+          "game_version": "CN公告2025-03-17",
+          "collected_at": "2026-10-16",
+          "content_type": "official_fact_summary",
+          "verification_status": "verified_public_page",
+          "category": "character",
+          "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+        }
+      },
+      {
+        "score": 0.9226333389322176,
+        "chunk": "赫卡蒂生日与海拉明信片 只能据此确认通信，不能推断其他关系。",
+        "source": {
+          "source_id": "char-001",
+          "title": "赫卡蒂生日与海拉明信片",
+          "source_url": "https://wqmt.aisnogames.com/news/1196",
+          "source_type": "official",
+          "character_name": "赫卡蒂",
+          "game_version": "CN公告2025-03-17",
+          "collected_at": "2026-10-16",
+          "content_type": "official_fact_summary",
+          "verification_status": "verified_public_page",
+          "category": "character",
+          "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+        }
+      }
+    ],
+    "http_status": 200
+  },
+  "rag_character": {
+    "response": {
+      "mode": "REAL_OLLAMA_RAG",
+      "answer": "资料日期为2025年3月17日，确认赫卡蒂生日与海拉明信片相关，但无法推断其他关系。",
+      "evidence": [
+        {
+          "score": 0.9280498635426562,
+          "chunk": "赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。",
+          "source": {
+            "source_id": "char-001",
+            "title": "赫卡蒂生日与海拉明信片",
+            "source_url": "https://wqmt.aisnogames.com/news/1196",
+            "source_type": "official",
+            "character_name": "赫卡蒂",
+            "game_version": "CN公告2025-03-17",
+            "collected_at": "2026-10-16",
+            "content_type": "official_fact_summary",
+            "verification_status": "verified_public_page",
+            "category": "character",
+            "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+          }
+        },
+        {
+          "score": 0.9226333389322176,
+          "chunk": "赫卡蒂生日与海拉明信片 只能据此确认通信，不能推断其他关系。",
+          "source": {
+            "source_id": "char-001",
+            "title": "赫卡蒂生日与海拉明信片",
+            "source_url": "https://wqmt.aisnogames.com/news/1196",
+            "source_type": "official",
+            "character_name": "赫卡蒂",
+            "game_version": "CN公告2025-03-17",
+            "collected_at": "2026-10-16",
+            "content_type": "official_fact_summary",
+            "verification_status": "verified_public_page",
+            "category": "character",
+            "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+          }
+        }
+      ]
+    },
+    "http_status": 200
+  },
+  "unknown_character": {
+    "response": {
+      "mode": "REAL_RETRIEVAL_NO_EVIDENCE",
+      "answer": "知识库未收录可支持该问题的证据。",
+      "evidence": []
+    },
+    "http_status": 200
+  },
+  "unknown_version": {
+    "response": {
+      "mode": "REAL_RETRIEVAL_NO_EVIDENCE",
+      "answer": "知识库未收录可支持该问题的证据。",
+      "evidence": []
+    },
+    "http_status": 200
+  },
+  "unrelated_question": {
+    "response": {
+      "mode": "REAL_RETRIEVAL_NO_EVIDENCE",
+      "answer": "知识库未收录可支持该问题的证据。",
+      "evidence": []
+    },
+    "http_status": 200
+  },
+  "agent_metrics": {
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answer": "模拟运营指标显示，付费用户为50人，付费率5%，ARPU为2.5 CNY。",
+      "executedTools": [
+        "getSyntheticOperationsMetrics: {}"
+      ]
+    },
+    "http_status": 200
+  },
+  "blank_input": {
+    "http_status": 400
+  }
+}

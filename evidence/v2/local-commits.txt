@@ -1,0 +1,10 @@
+c0dd5ee | 2026-10-16T14:55:39+08:00 | Build first local MBCC Copilot RAG and record real Ollama evidence
+ae5f78b | 2026-10-16T15:20:05+08:00 | Stage A: audit real autonomous tools and benchmark Qwen model failures
+46c0fc0 | 2026-10-16T16:02:39+08:00 | Stage B: verify 42-source memory RAG and add explicit Milvus persistence path
+8379fed | 2026-10-16T16:02:39+08:00 | Stage C: run isolated read-only Synthetic SQL with 23 independent reconciliations
+2b0cc03 | 2026-10-16T16:13:00+08:00 | Stage D: isolate bounded persistent conversations and ground tool synthesis
+1061e40 | 2026-10-16T16:13:00+08:00 | Stage E: freeze 80 tasks and reproducible paired experiment scoring
+ec71e67 | 2026-10-16T20:54:20+08:00 | Record completed real model comparisons and 320 frozen-task results with failures
+64baeaf | 2026-10-16T20:54:20+08:00 | Stage F: deliver local UI and preserve real HTTP, restart, and semantic failure evidence
+b2d8b11 | 2026-10-16T20:55:47+08:00 | Stage G: deliver reproducible Windows deployment, sourced supplements, SQL provenance, and resume proof index
+b86655a | 2026-10-16T20:57:22+08:00 | Add immutable release integrity manifest and separated acceptance counts

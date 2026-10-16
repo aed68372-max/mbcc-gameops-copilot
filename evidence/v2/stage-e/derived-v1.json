@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "note": "Post-run definitions clarified; frozen answers and original score files unchanged. Exact argument metric is limited to 16 tasks with explicit SQL field annotations.",
+  "groups": {
+    "A_DIRECT": {
+      "annotated_sql_arguments": {
+        "correct": 0,
+        "eligible": 16
+      },
+      "multi_tool_execution_and_selection": {
+        "correct": 0,
+        "eligible": 9
+      },
+      "category_completion": {
+        "character": {
+          "correct": 0,
+          "total": 8
+        },
+        "combined": {
+          "correct": 0,
+          "total": 8
+        },
+        "comparison": {
+          "correct": 0,
+          "total": 8
+        },
+        "conversation": {
+          "correct": 1,
+          "total": 8
+        },
+        "cross_document": {
+          "correct": 0,
+          "total": 8
+        },
+        "events": {
+          "correct": 1,
+          "total": 8
+        },
+        "injection": {
+          "correct": 6,
+          "total": 8
+        },
+        "mechanics": {
+          "correct": 0,
+          "total": 8
+        },
+        "metrics": {
+          "correct": 0,
+          "total": 8
+        },
+        "unanswerable": {
+          "correct": 7,
+          "total": 8
+        }
+      }
+    },
+    "B_KEYWORD": {
+      "annotated_sql_arguments": {
+        "correct": 0,
+        "eligible": 16
+      },
+      "multi_tool_execution_and_selection": {
+        "correct": 0,
+        "eligible": 9
+      },
+      "category_completion": {
+        "character": {
+          "correct": 8,
+          "total": 8
+        },
+        "combined": {
+          "correct": 0,
+          "total": 8
+        },
+        "comparison": {
+          "correct": 7,
+          "total": 8
+        },
+        "conversation": {
+          "correct": 5,
+          "total": 8
+        },
+        "cross_document": {
+          "correct": 4,
+          "total": 8
+        },
+        "events": {
+          "correct": 7,
+          "total": 8
+        },
+        "injection": {
+          "correct": 4,
+          "total": 8
+        },
+        "mechanics": {
+          "correct": 7,
+          "total": 8
+        },
+        "metrics": {
+          "correct": 0,
+          "total": 8
+        },
+        "unanswerable": {
+          "correct": 6,
+          "total": 8
+        }
+      }
+    },
+    "C_MEMORY_DIAGNOSTIC": {
+      "annotated_sql_arguments": {
+        "correct": 0,
+        "eligible": 16
+      },
+      "multi_tool_execution_and_selection": {
+        "correct": 0,
+        "eligible": 9
+      },
+      "category_completion": {
+        "character": {
+          "correct": 8,
+          "total": 8
+        },
+        "combined": {
+          "correct": 0,
+          "total": 8
+        },
+        "comparison": {
+          "correct": 5,
+          "total": 8
+        },
+        "conversation": {
+          "correct": 2,
+          "total": 8
+        },
+        "cross_document": {
+          "correct": 6,
+          "total": 8
+        },
+        "events": {
+          "correct": 7,
+          "total": 8
+        },
+        "injection": {
+          "correct": 4,
+          "total": 8
+        },
+        "mechanics": {
+          "correct": 8,
+          "total": 8
+        },
+        "metrics": {
+          "correct": 0,
+          "total": 8
+        },
+        "unanswerable": {
+          "correct": 5,
+          "total": 8
+        }
+      }
+    },
+    "D_MEMORY_DIAGNOSTIC": {
+      "annotated_sql_arguments": {
+        "correct": 6,
+        "eligible": 16
+      },
+      "multi_tool_execution_and_selection": {
+        "correct": 0,
+        "eligible": 9
+      },
+      "category_completion": {
+        "character": {
+          "correct": 7,
+          "total": 8
+        },
+        "combined": {
+          "correct": 0,
+          "total": 8
+        },
+        "comparison": {
+          "correct": 7,
+          "total": 8
+        },
+        "conversation": {
+          "correct": 2,
+          "total": 8
+        },
+        "cross_document": {
+          "correct": 2,
+          "total": 8
+        },
+        "events": {
+          "correct": 0,
+          "total": 8
+        },
+        "injection": {
+          "correct": 6,
+          "total": 8
+        },
+        "mechanics": {
+          "correct": 4,
+          "total": 8
+        },
+        "metrics": {
+          "correct": 0,
+          "total": 8
+        },
+        "unanswerable": {
+          "correct": 6,
+          "total": 8
+        }
+      }
+    }
+  }
+}

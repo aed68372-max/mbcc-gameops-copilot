@@ -1,0 +1,40 @@
+[
+  {
+    "model": "qwen3:1.7b",
+    "profile": "guided",
+    "tasks": 20,
+    "p50_ms": 2012.3675999930128,
+    "p95_ms": 16494.135850005863,
+    "tool_selection_correct": {
+      "correct": 5,
+      "eligible": 20,
+      "rate": 0.25
+    },
+    "parameter_schema_pass": {
+      "correct": 6,
+      "eligible": 19,
+      "rate": 0.3157894736842105
+    },
+    "annotated_arguments_correct": {
+      "correct": 3,
+      "eligible": 9,
+      "rate": 0.3333333333333333
+    },
+    "multi_tool_success": {
+      "correct": 1,
+      "eligible": 2,
+      "rate": 0.5
+    },
+    "abstention_correct": {
+      "correct": 0,
+      "eligible": 2,
+      "rate": 0.0
+    },
+    "output_schema_pass": {
+      "correct": 1,
+      "eligible": 20,
+      "rate": 0.05
+    },
+    "memory_method": "Ollama /api/ps size and size_vram, not OS peak RSS"
+  }
+]

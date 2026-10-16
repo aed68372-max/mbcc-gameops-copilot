@@ -1,0 +1,12 @@
+{
+  "dataset_sha256": "470cc442473ac690a5978cfb609463996aae000fcc42b62b51d55892f26e1fb3",
+  "task_count": 20,
+  "profile": "baseline",
+  "temperature": 0,
+  "seed": 42,
+  "think": false,
+  "num_ctx": 8192,
+  "num_predict": 768,
+  "transport": "Java LangChain4j AI Services",
+  "metric_tool_backend_note": "Stage A metrics may return BLOCKED until independent SQL is configured; selection is not task completion."
+}

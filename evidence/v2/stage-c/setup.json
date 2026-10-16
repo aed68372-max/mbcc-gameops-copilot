@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED",
+  "database": "MBCCCopilotSynthetic",
+  "synthetic": true,
+  "counts": {
+    "users": 1500,
+    "activity": 18931,
+    "payments": 1856,
+    "event_participation": 4655
+  },
+  "source": "NEW_MBCC_SYNTHETIC_FALLBACK",
+  "gacha_reuse_status": "BLOCKED_NOT_FOUND",
+  "server_configuration_changed": false,
+  "query_identity": "mbcc_reader WITHOUT LOGIN, Windows trusted transport then EXECUTE AS USER WITH NO REVERT, pooling disabled",
+  "security_limit": "Windows transport identity has existing sysadmin privileges; queries execute under irrevertible read-only database context. A dedicated low-privilege Windows service login is still recommended for production."
+}

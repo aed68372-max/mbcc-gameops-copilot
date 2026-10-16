@@ -1,0 +1,78 @@
+[
+  {
+    "model": "qwen3:0.6b",
+    "profile": "guided",
+    "tasks": 20,
+    "p50_ms": 806.8078999931458,
+    "p95_ms": 1558.7208649885742,
+    "tool_selection_correct": {
+      "correct": 1,
+      "eligible": 20,
+      "rate": 0.05
+    },
+    "parameter_schema_pass": {
+      "correct": 1,
+      "eligible": 19,
+      "rate": 0.05263157894736842
+    },
+    "annotated_arguments_correct": {
+      "correct": 0,
+      "eligible": 9,
+      "rate": 0.0
+    },
+    "multi_tool_success": {
+      "correct": 0,
+      "eligible": 2,
+      "rate": 0.0
+    },
+    "abstention_correct": {
+      "correct": 0,
+      "eligible": 2,
+      "rate": 0.0
+    },
+    "output_schema_pass": {
+      "correct": 0,
+      "eligible": 20,
+      "rate": 0.0
+    },
+    "memory_method": "Ollama /api/ps size and size_vram, not OS peak RSS"
+  },
+  {
+    "model": "qwen3:1.7b",
+    "profile": "guided",
+    "tasks": 20,
+    "p50_ms": 3926.261250002426,
+    "p95_ms": 8208.835409990572,
+    "tool_selection_correct": {
+      "correct": 11,
+      "eligible": 20,
+      "rate": 0.55
+    },
+    "parameter_schema_pass": {
+      "correct": 12,
+      "eligible": 19,
+      "rate": 0.631578947368421
+    },
+    "annotated_arguments_correct": {
+      "correct": 5,
+      "eligible": 9,
+      "rate": 0.5555555555555556
+    },
+    "multi_tool_success": {
+      "correct": 1,
+      "eligible": 2,
+      "rate": 0.5
+    },
+    "abstention_correct": {
+      "correct": 1,
+      "eligible": 2,
+      "rate": 0.5
+    },
+    "output_schema_pass": {
+      "correct": 7,
+      "eligible": 20,
+      "rate": 0.35
+    },
+    "memory_method": "Ollama /api/ps size and size_vram, not OS peak RSS"
+  }
+]

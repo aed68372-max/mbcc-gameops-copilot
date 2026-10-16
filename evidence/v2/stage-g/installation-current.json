@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-16T16:39:37.0537672+08:00",
+  "status": "BLOCKED",
+  "reason": "WSL prerequisites enabled with reboot pending; Docker engine not yet registered/running. No Milvus write/query/restart evidence.",
+  "automatic_reboot": false,
+  "docker_desktop_file": false,
+  "docker_command": false,
+  "reboot_pending": true
+}

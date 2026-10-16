@@ -1,0 +1,32 @@
+{
+  "dataset_sha256": "470cc442473ac690a5978cfb609463996aae000fcc42b62b51d55892f26e1fb3",
+  "task_count": 20,
+  "profile": "structured",
+  "temperature": 0,
+  "seed": 42,
+  "think": false,
+  "num_ctx": 8192,
+  "num_predict": 768,
+  "transport": "Java LangChain4j AI Services",
+  "metric_tool_backend_note": "Stage A metrics may return BLOCKED until independent SQL is configured; selection is not task completion.",
+  "health": {
+    "knowledge": {
+      "store": "IN_MEMORY",
+      "documents": 42,
+      "chunks": 42,
+      "dimension": 1024,
+      "collection": "mbcc_v2_3b7e1d2492ea",
+      "milvusVerified": false
+    },
+    "model": "qwen3:1.7b",
+    "status": "UP",
+    "metrics": {
+      "database": "MBCCCopilotSynthetic",
+      "synthetic": true,
+      "transport": "Windows ODBC via bounded local bridge",
+      "status": "CONFIGURED_NOT_A_LIVE_PROBE",
+      "query_user": "mbcc_reader"
+    }
+  },
+  "architecture_note": "guided/baseline use one AI Services stage; structured uses autonomous tool stage then evidence-only schema-constrained synthesis. Limits apply per model call."
+}

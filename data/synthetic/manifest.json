@@ -1,0 +1,43 @@
+{
+  "synthetic": true,
+  "generator_seed": 20261016,
+  "source": "NEW_MBCC_SYNTHETIC_FALLBACK",
+  "gacha_reuse_status": "BLOCKED_NOT_FOUND",
+  "note": "Searched accessible local user directories, Documents/Codex, desktop, D drive and SQL database names; no gacha-liveops-analytics located. This is newly generated, not reused Gacha data.",
+  "observation_start": "2025-01-01",
+  "observation_end": "2025-02-14",
+  "timezone": "Asia/Shanghai; synthetic calendar dates",
+  "events": [
+    {
+      "event_id": "SYN-LIMITED-01",
+      "start_date": "2025-01-11",
+      "end_date": "2025-01-20",
+      "public_rule_reference": "play-001",
+      "note": "Teaching association with historical public rules only; synthetic dates are NOT official event dates"
+    },
+    {
+      "event_id": "SYN-RERUN-02",
+      "start_date": "2025-02-01",
+      "end_date": "2025-02-10",
+      "public_rule_reference": null
+    }
+  ],
+  "tables": {
+    "users": {
+      "rows": 1500,
+      "sha256": "a0007b4bb4dac862ab4febfa67d1c85ae99ece3c160e8f4ac038f7a2962c8a84"
+    },
+    "activity": {
+      "rows": 18931,
+      "sha256": "2d06964c92890452b96c4c2879a2521e6c8a6742824990bf892ca084b4b81c5a"
+    },
+    "payments": {
+      "rows": 1856,
+      "sha256": "b36e67138e4a2e9199223f86f73c42739b013d2b33d250d07be43624c17029b9"
+    },
+    "event_participation": {
+      "rows": 4655,
+      "sha256": "a2087c0aa87fd22655872cc812f5606a4c902b78ae88c80c5a4a8ca9642f4682"
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "status": "PARTIAL",
+  "completed_on": "2026-10-16",
+  "runtime_model": "qwen3:1.7b",
+  "embedding_model": "qwen3-embedding:0.6b",
+  "embedding_dimension": 1024,
+  "stages": {
+    "A": "PARTIAL_REAL_TOOLS_UNSTABLE",
+    "B": "PARTIAL_MEMORY_VERIFIED_MILVUS_BLOCKED",
+    "C": "PARTIAL_REAL_SQL_VERIFIED_GACHA_REUSE_BLOCKED",
+    "D": "PARTIAL_TECHNICAL_ISOLATION_VERIFIED_SEMANTIC_FAILURES_RETAINED",
+    "E": "PARTIAL_320_EXECUTED_MILVUS_GROUPS_BLOCKED",
+    "F": "PARTIAL_RUNNING_UI_API_WITH_AGENT_FAILURES",
+    "G": "PARTIAL_WINDOWS_HYBRID_VERIFIED_MILVUS_REBOOT_BLOCKED"
+  },
+  "corpus": {
+    "final_documents": 45,
+    "final_official_urls": 10,
+    "frozen_experiment_documents": 42
+  },
+  "test_categories": {
+    "mock_and_unit": {
+      "passed": 14,
+      "failed": 0,
+      "integration_classes_skipped": 3
+    },
+    "database_junit": {
+      "passed": 6,
+      "failed": 0
+    },
+    "independent_sql_csv_reconciliation": {
+      "passed": 23,
+      "failed": 0
+    },
+    "legacy_real_llm_comprehensive_probe": {
+      "passed": 1,
+      "failed": 0,
+      "limits": "Includes an old fixed Synthetic fixture, not real SQL task completion."
+    },
+    "initial_http_e2e_automatic": {
+      "passed": 7,
+      "total": 8
+    },
+    "initial_http_e2e_manual_upper_bound": {
+      "passed": 6,
+      "total": 8
+    },
+    "fresh_session_restart_checks": {
+      "passed": 1,
+      "total": 2,
+      "failed": "Meta-history answer rejected for no current tool evidence; session authenticated."
+    },
+    "restart_substantive_pronoun_followup": {
+      "passed": 1,
+      "total": 1
+    },
+    "post_run_sql_provenance_regression": {
+      "passed": 3,
+      "total": 8
+    },
+    "milvus_persistence": {
+      "status": "BLOCKED",
+      "passed": 0
+    }
+  },
+  "frozen80": {
+    "status": "PARTIAL",
+    "model": "qwen3:1.7b",
+    "task_count": 80,
+    "milvus_groups_status": "BLOCKED_NO_MILVUS_SERVER",
+    "rag_store": "IN_MEMORY",
+    "recall_at5": 0.9895833333333334,
+    "recall_eligible": 48,
+    "recall_definition": "Macro-average relevant source-id coverage in top5, only tasks with known sources and without pronoun history; deduplicated source ids.",
+    "groups": [
+      {
+        "name": "A_DIRECT",
+        "profile": "direct",
+        "executed": 80,
+        "task_completion": {
+          "correct": 15,
+          "eligible": 80,
+          "rate": 0.1875
+        },
+        "tool_selection": {
+          "correct": 13,
+          "eligible": 80,
+          "rate": 0.1625
+        },
+        "parameter_schema": {
+          "correct": 0,
+          "eligible": 67,
+          "rate": 0.0
+        },
+        "metric_query_matches_csv": {
+          "correct": 0,
+          "eligible": 16,
+          "rate": 0.0
+        },
+        "unanswerable_handling": {
+          "correct": 15,
+          "eligible": 20,
+          "rate": 0.75
+        },
+        "p50_ms": 1639.0506500029005,
+        "p95_ms": 5242.1733199909795,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "citation_validity": {
+          "valid": 0,
+          "total": 40,
+          "rate": 0.0
+        }
+      },
+      {
+        "name": "B_KEYWORD",
+        "profile": "keyword",
+        "executed": 80,
+        "task_completion": {
+          "correct": 48,
+          "eligible": 80,
+          "rate": 0.6
+        },
+        "tool_selection": {
+          "correct": 13,
+          "eligible": 80,
+          "rate": 0.1625
+        },
+        "parameter_schema": {
+          "correct": 0,
+          "eligible": 67,
+          "rate": 0.0
+        },
+        "metric_query_matches_csv": {
+          "correct": 0,
+          "eligible": 16,
+          "rate": 0.0
+        },
+        "unanswerable_handling": {
+          "correct": 13,
+          "eligible": 20,
+          "rate": 0.65
+        },
+        "p50_ms": 7313.1712499889545,
+        "p95_ms": 14789.411535007821,
+        "error_count": 7,
+        "error_rate": 0.0875,
+        "citation_validity": {
+          "valid": 182,
+          "total": 182,
+          "rate": 1.0
+        }
+      },
+      {
+        "name": "C_MEMORY_DIAGNOSTIC",
+        "profile": "rag",
+        "executed": 80,
+        "task_completion": {
+          "correct": 45,
+          "eligible": 80,
+          "rate": 0.5625
+        },
+        "tool_selection": {
+          "correct": 13,
+          "eligible": 80,
+          "rate": 0.1625
+        },
+        "parameter_schema": {
+          "correct": 0,
+          "eligible": 67,
+          "rate": 0.0
+        },
+        "metric_query_matches_csv": {
+          "correct": 0,
+          "eligible": 16,
+          "rate": 0.0
+        },
+        "unanswerable_handling": {
+          "correct": 10,
+          "eligible": 20,
+          "rate": 0.5
+        },
+        "p50_ms": 7208.077349991072,
+        "p95_ms": 14944.610264994843,
+        "error_count": 4,
+        "error_rate": 0.05,
+        "citation_validity": {
+          "valid": 174,
+          "total": 174,
+          "rate": 1.0
+        }
+      },
+      {
+        "name": "D_MEMORY_DIAGNOSTIC",
+        "profile": "tools",
+        "executed": 80,
+        "task_completion": {
+          "correct": 34,
+          "eligible": 80,
+          "rate": 0.425
+        },
+        "tool_selection": {
+          "correct": 51,
+          "eligible": 80,
+          "rate": 0.6375
+        },
+        "parameter_schema": {
+          "correct": 51,
+          "eligible": 67,
+          "rate": 0.7611940298507462
+        },
+        "metric_query_matches_csv": {
+          "correct": 4,
+          "eligible": 16,
+          "rate": 0.25
+        },
+        "unanswerable_handling": {
+          "correct": 14,
+          "eligible": 20,
+          "rate": 0.7
+        },
+        "p50_ms": 8910.383799986448,
+        "p95_ms": 21977.398535003886,
+        "error_count": 18,
+        "error_rate": 0.225,
+        "citation_validity": {
+          "valid": 80,
+          "total": 80,
+          "rate": 1.0
+        }
+      }
+    ],
+    "required_unexecuted_groups": [
+      "C_MILVUS_RAG",
+      "D_MILVUS_TOOLS"
+    ]
+  },
+  "boundaries": [
+    "All operations data NEW_MBCC_SYNTHETIC_FALLBACK, not official revenue or reused Gacha.",
+    "No WeatherSmart/Gacha/WideWorldImporters project or business table modification.",
+    "Milvus server write/count/restart/persistence not verified.",
+    "No public application deployment. User later authorized uploading source and evidence to aed68372-max/mbcc-gameops-copilot.",
+    "Post-run SQL source IDs and 3 supplemental docs do not replace frozen80 results."
+  ]
+}

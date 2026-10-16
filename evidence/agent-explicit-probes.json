@@ -1,0 +1,44 @@
+[
+  {
+    "question": "必须调用 searchCharacterKnowledge 工具，参数 character=赫卡蒂，keyword=生日明信片，version为空字符串，然后依据返回证据回答。",
+    "name": "character_explicit",
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answerStatus": "UNVERIFIED_MODEL_SUMMARY",
+      "answer": "赫卡蒂的生日明信片信息在官方资料中确认，她于2025年3月17日收到海拉寄来的明信片。该信息仅能作为通信确认，无法推断其他关系。",
+      "executedTools": [
+        "searchCharacterKnowledge: {\"character\":\"赫卡蒂\",\"keyword\":\"生日明信片\",\"version\":\"\"}"
+      ],
+      "toolEvidence": [
+        {
+          "name": "searchCharacterKnowledge",
+          "arguments": "{\"character\":\"赫卡蒂\",\"keyword\":\"生日明信片\",\"version\":\"\"}",
+          "result": "[Hit[score=0.8084062784944974, chunk=赫卡蒂生日与海拉明信片 只能据此确认通信，不能推断其他关系。, source=Knowledge[source_id=char-001, title=赫卡蒂生日与海拉明信片, source_url=https://wqmt.aisnogames.com/news/1196, source_type=official, character_name=赫卡蒂, game_version=CN公告2025-03-17, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=character, content=2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。]], Hit[score=0.7795177020235604, chunk=赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。, source=Knowledge[source_id=char-001, title=赫卡蒂生日与海拉明信片, source_url=https://wqmt.aisnogames.com/news/1196, source_type=official, character_name=赫卡蒂, game_version=CN公告2025-03-17, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=character, content=2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。]]]",
+          "failed": false
+        }
+      ]
+    }
+  },
+  {
+    "question": "必须调用 searchGameplayKnowledge 工具，参数 keyword=海沫粼光十次追踪保底，version为空字符串，然后依据返回证据回答。",
+    "name": "gameplay_explicit",
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answerStatus": "UNVERIFIED_MODEL_SUMMARY",
+      "answer": "根据搜索结果，海沫粼光十次追踪保底的规则如下：\n\n- 活动追踪每10次必得高危级或狂厄级，提前获得任一这两种等级会重置该计数。\n- 该活动追踪若狂厄级不是L.L.，下次活动追踪狂厄级必为对应UP。\n- 活动追踪保底累计，与其他追踪类型独立。\n\n这些信息来自海沫粼光官方公告，时间为2024年6月27日开服后至7月11日09:59:59。",
+      "executedTools": [
+        "searchGameplayKnowledge: {\"keyword\":\"海沫粼光十次追踪保底\",\"version\":\"\"}"
+      ],
+      "toolEvidence": [
+        {
+          "name": "searchGameplayKnowledge",
+          "arguments": "{\"keyword\":\"海沫粼光十次追踪保底\",\"version\":\"\"}",
+          "result": "[Hit[score=0.9142888317169271, chunk=海沫粼光历史十次追踪规则 该公告中的活动追踪每10次必得高危级或狂厄级，提前获得任一这两种等级会重置该计数。, source=Knowledge[source_id=play-002, title=海沫粼光历史十次追踪规则, source_url=https://wqmt.aisnogames.com/news/578, source_type=official, character_name=, game_version=CN公告2024-06-27, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=gameplay, content=该公告中的活动追踪每10次必得高危级或狂厄级，提前获得任一这两种等级会重置该计数。]], Hit[score=0.8989239050414395, chunk=海沫粼光历史UP与独立计数 活动追踪保底累计，与其他追踪类型独立。, source=Knowledge[source_id=play-004, title=海沫粼光历史UP与独立计数, source_url=https://wqmt.aisnogames.com/news/578, source_type=official, character_name=, game_version=CN公告2024-06-27, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=gameplay, content=该活动追踪若狂厄级不是L.L.，下次活动追踪狂厄级必为对应UP。活动追踪保底累计，与其他追踪类型独立。]], Hit[score=0.8759204836696604, chunk=海沫粼光历史活动时间 海沫粼光属于活动追踪，历史有效时间为2024年6月27日开服后至7月11日09:59:59；不能当成当前开放活动。, source=Knowledge[source_id=play-001, title=海沫粼光历史活动时间, source_url=https://wqmt.aisnogames.com/news/578, source_type=official, character_name=, game_version=CN公告2024-06-27, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=gameplay, content=海沫粼光属于活动追踪，历史有效时间为2024年6月27日开服后至7月11日09:59:59；不能当成当前开放活动。]], Hit[score=0.874517432716025, chunk=海沫粼光历史狂厄级保底 该活动追踪连续50次未得狂厄级后概率提升，80次内必得狂厄级；获得后计数重置，基础概率恢复2%。, source=Knowledge[source_id=play-003, title=海沫粼光历史狂厄级保底, source_url=https://wqmt.aisnogames.com/news/578, source_type=official, character_name=, game_version=CN公告2024-06-27, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=gameplay, content=该活动追踪连续50次未得狂厄级后概率提升，80次内必得狂厄级；获得后计数重置，基础概率恢复2%。]]]",
+          "failed": false
+        }
+      ]
+    }
+  }
+]

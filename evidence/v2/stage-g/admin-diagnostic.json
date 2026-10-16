@@ -1,0 +1,59 @@
+﻿{
+    "captured_at":  "2026-10-16T16:05:58.0219667+08:00",
+    "processes":  [
+                      {
+                          "Name":  "Docker Desktop Installer.exe",
+                          "ProcessId":  59808,
+                          "ParentProcessId":  47724,
+                          "CommandLine":  "\"C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792135738314737800\\Docker Desktop Installer.exe\" install -package C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792135738314737800\\DockerDesktop.d4w -vm-package C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792135738314737800\\DockerDesktopVM.d4w",
+                          "ExecutablePath":  "C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792135738314737800\\Docker Desktop Installer.exe"
+                      },
+                      {
+                          "Name":  "wslinstaller.exe",
+                          "ProcessId":  50104,
+                          "ParentProcessId":  1612,
+                          "CommandLine":  "\"C:\\Program Files\\WindowsApps\\MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.13.0_x64__8wekyb3d8bbwe\\wslinstaller.exe\"",
+                          "ExecutablePath":  "C:\\Program Files\\WindowsApps\\MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.13.0_x64__8wekyb3d8bbwe\\wslinstaller.exe"
+                      },
+                      {
+                          "Name":  "Docker%20Desktop%20Installer.exe",
+                          "ProcessId":  54660,
+                          "ParentProcessId":  58768,
+                          "CommandLine":  "\"C:\\Users\\a\\AppData\\Local\\Temp\\WinGet\\Docker.DockerDesktop.4.95.0\\Docker%20Desktop%20Installer.exe\" install --quiet --accept-license --backend=wsl-2 --no-windows-containers",
+                          "ExecutablePath":  "C:\\Users\\a\\AppData\\Local\\Temp\\WinGet\\Docker.DockerDesktop.4.95.0\\Docker%20Desktop%20Installer.exe"
+                      },
+                      {
+                          "Name":  "Docker Desktop Installer.exe",
+                          "ProcessId":  37100,
+                          "ParentProcessId":  54660,
+                          "CommandLine":  "\"C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792136113511987300\\Docker Desktop Installer.exe\" install -package C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792136113511987300\\DockerDesktop.d4w --quiet --accept-license --backend=wsl-2 --no-windows-containers -vm-package C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792136113511987300\\DockerDesktopVM.d4w",
+                          "ExecutablePath":  "C:\\Users\\a\\AppData\\Local\\Temp\\DockerDesktopInstallers\\1792136113511987300\\Docker Desktop Installer.exe"
+                      }
+                  ],
+    "features":  [
+                     {
+                         "feature":  "VirtualMachinePlatform",
+                         "state":  "Enabled"
+                     },
+                     {
+                         "feature":  "Microsoft-Windows-Subsystem-Linux",
+                         "state":  "Enabled"
+                     }
+                 ],
+    "reboot_pending":  true,
+    "docker_registration":  {
+
+                            },
+    "log_files":  [
+                      {
+                          "FullName":  "C:\\ProgramData\\DockerDesktop\\install-log-admin.0.txt",
+                          "Length":  2083,
+                          "LastWriteTime":  "\/Date(1792135725361)\/"
+                      },
+                      {
+                          "FullName":  "C:\\ProgramData\\DockerDesktop\\install-log-admin.txt",
+                          "Length":  1025,
+                          "LastWriteTime":  "\/Date(1792135744603)\/"
+                      }
+                  ]
+}

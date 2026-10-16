@@ -1,0 +1,47 @@
+[
+  {
+    "question": "赫卡蒂生日收到谁的明信片？请查资料。",
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answerStatus": "UNVERIFIED_MODEL_SUMMARY",
+      "answer": "未收录相关信息。",
+      "executedTools": [],
+      "toolEvidence": []
+    },
+    "name": "character_natural"
+  },
+  {
+    "question": "海沫粼光活动追踪的十次保底规则是什么？",
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answerStatus": "UNVERIFIED_MODEL_SUMMARY",
+      "answer": "未收录相关信息。",
+      "executedTools": [],
+      "toolEvidence": []
+    },
+    "name": "gameplay_natural"
+  },
+  {
+    "question": "请使用 getSource 查询 sourceId 为 char-001 的来源。",
+    "http_status": 200,
+    "response": {
+      "mode": "REAL_OLLAMA_AI_SERVICES",
+      "answerStatus": "UNVERIFIED_MODEL_SUMMARY",
+      "answer": "赫卡蒂生日会于2025年3月17日发布，内容提及她收到海拉明信片。该信息来自官方公告，确认为事实性内容，无法推断其他关系。",
+      "executedTools": [
+        "getSource: {\"sourceId\":\"char-001\"}"
+      ],
+      "toolEvidence": [
+        {
+          "name": "getSource",
+          "arguments": "{\"sourceId\":\"char-001\"}",
+          "result": "Knowledge[source_id=char-001, title=赫卡蒂生日与海拉明信片, source_url=https://wqmt.aisnogames.com/news/1196, source_type=official, character_name=赫卡蒂, game_version=CN公告2025-03-17, collected_at=2026-10-16, content_type=official_fact_summary, verification_status=verified_public_page, category=character, content=2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。]",
+          "failed": false
+        }
+      ]
+    },
+    "name": "source_lookup"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "kind": "REAL_HTTP_RESTART_FOLLOWUP",
+  "passed": true,
+  "question": "她生日收到谁的明信片？请用已收录的官方资料回答。",
+  "http_status": 200,
+  "run": {
+    "requestId": "81c6601a-514d-468b-9e5c-0ed97fa6ce3e",
+    "model": "qwen3:1.7b",
+    "profile": "tools",
+    "status": "OK",
+    "elapsedMs": 6959.8632,
+    "reply": {
+      "answer": "赫卡蒂在2025年3月17日生日会上收到海拉寄来的明信片",
+      "citations": [
+        "char-001"
+      ],
+      "abstained": false,
+      "clarification": false
+    },
+    "rawAnswer": "{\"answer\":\"赫卡蒂在2025年3月17日生日会上收到海拉寄来的明信片\",\"citations\":[\"char-001\"],\"abstained\":false,\"clarification\":false}",
+    "tools": [
+      {
+        "callId": "81c6601a-514d-468b-9e5c-0ed97fa6ce3e:1",
+        "tool": "searchCharacterKnowledge",
+        "arguments": {
+          "character": "赫卡蒂",
+          "query": "生日收到谁的明信片",
+          "version": null
+        },
+        "status": "OK",
+        "elapsedMs": 75.4086,
+        "result": {
+          "status": "OK",
+          "sourceType": "OFFICIAL_KNOWLEDGE",
+          "data": [
+            {
+              "score": 0.9405633451688242,
+              "chunk": "赫卡蒂生日与海拉明信片 2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。",
+              "source": {
+                "source_id": "char-001",
+                "title": "赫卡蒂生日与海拉明信片",
+                "source_url": "https://wqmt.aisnogames.com/news/1196",
+                "source_type": "official",
+                "character_name": "赫卡蒂",
+                "game_version": "CN公告2025-03-17",
+                "collected_at": "2026-10-16",
+                "content_type": "official_fact_summary",
+                "verification_status": "verified_public_page",
+                "category": "character",
+                "content": "2025年3月17日官网发布赫卡蒂生日会；文案提到她收到海拉寄来的明信片。只能据此确认通信，不能推断其他关系。"
+              }
+            }
+          ],
+          "error": null
+        }
+      }
+    ],
+    "modelToolRequests": [
+      "searchCharacterKnowledge:{\"character\":\"赫卡蒂\",\"query\":\"生日收到谁的明信片\"}"
+    ],
+    "error": null,
+    "retrievalEvidence": [],
+    "toolStageAnswer": "赫卡蒂的生日收到的是海拉寄来的明信片。这一信息来源于官方公告，明确指出赫卡蒂在2025年3月17日的生日会上收到海拉的明信片，但未提及其他关系。"
+  },
+  "limits": "Separate substantive pronoun-followup case; does not erase failed meta-history response in e2e-restart.json."
+}

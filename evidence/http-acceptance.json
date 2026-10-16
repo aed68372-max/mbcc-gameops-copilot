@@ -1,0 +1,11 @@
+{
+  "live_documents": true,
+  "live_chunks": true,
+  "rag_has_official_source": true,
+  "unknown_character_abstains": true,
+  "unknown_version_abstains": true,
+  "unrelated_abstains": true,
+  "blank_input_400": true,
+  "actual_tool_execution": true,
+  "metric_answer_uses_actual_tool": true
+}
