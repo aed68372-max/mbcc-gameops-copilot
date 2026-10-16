@@ -19,6 +19,6 @@
 
 [三条简历文案及主张—证据映射](resume_evidence.md) · [前10个真实失败](failure_analysis.md) · [API](api.md) · [部署复验](deployment.md)
 
-[本地完整Git历史与远程导入说明](git-history.md) · [分项验收JSON](../evidence/v2/acceptance.json) · [快照完整性清单](../evidence/v2/release-integrity.json)
+[完整Git历史包与远程导入说明](git-history.md) · [分项验收JSON](../evidence/v2/acceptance.json) · [快照完整性清单](../evidence/v2/release-integrity.json)
 
 原始JSONL可下载后逐行解析；较大文件在GitHub可能不直接渲染。Git提交是执行记录，不能单独证明模型正确率；请同时检查题集hash、原始输出、实际tool trace、评分分母与失败案例。

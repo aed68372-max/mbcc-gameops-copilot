@@ -1,0 +1,11 @@
+{
+  "status": "VERIFIED_BUNDLE_CONTENT",
+  "authorization": "User explicitly authorized uploading the complete Git history bundle after the earlier approval-review rejection.",
+  "file": "evidence/v2/local-history.bundle",
+  "bytes": 685586,
+  "sha256": "f6b3b1be1e256c4183fe0ce28b4eda8dc1222335505a4e9e7c72c61a34b0c5da",
+  "git_blob_sha": "8b7089d709b8d643d80fedbd6e023ce38dbf9e2d",
+  "history_tip": "b86655abec17794930e1fb4963001ddc86809ed5",
+  "coverage": "Complete local project history through this frozen tip, including original c0dd5ee and stages A-G. Later repository-import documentation commits are outside this archive.",
+  "exclusions": "Runtime session files, model weights, build target and real credentials were not tracked in the archived project."
+}
